@@ -14,7 +14,8 @@
 
 name: Image
 
-on:
+on
+  workflow_dispatch:
   workflow_call:
     inputs:
       version:
