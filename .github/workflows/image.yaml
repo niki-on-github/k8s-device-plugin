@@ -14,8 +14,18 @@
 
 name: Image
 
-on
+on:
   workflow_dispatch:
+    inputs:
+      version:
+        required: true
+        description: "version"
+        type: string
+      build_multi_arch_images:
+        required: true
+        description: "build_multi_arch_images"
+        type: string
+
   workflow_call:
     inputs:
       version:
